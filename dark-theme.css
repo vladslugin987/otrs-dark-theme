@@ -1,0 +1,486 @@
+@media all {
+    /* Основные элементы */
+    html, body {
+        color: #e0e0e0; /* Светлый текст */
+        background: #191515 !important; /* Тёмный фон */
+        text-shadow: 0 !important;
+    }
+
+    /* Ссылки */
+    a, a:hover, a:focus {
+        color: #bb86fc; /* Яркий оттенок для ссылок для улучшения читаемости */
+    }
+
+    /* Заголовки */
+    h1, h2, h3, h4, h5, h6 {
+        color: #e0e0e0; /* Светлый текст для заголовков */
+        text-shadow: 0 0 #fff;
+        color: #fff;
+    }
+
+    /* Уникальные классы и элементы, требующие специальной настройки */
+    .ErrorBox, .SuccessBox {
+        background: #b83850; /* Тёмный фон для блоков с сообщениями об ошибках */
+        color: #FFF; /* Светлый текст */
+    }
+
+    .MessageBox {
+        background: #333; /* Тёмный фон для информационных сообщений */
+        color: #e0e0e0; /* Светлый текст */
+    }
+
+    /* Фоновые элементы и специфические элементы */
+    .MainBox, .OverviewBox {
+        background: #1e1e1e; /* Ещё более тёмный фон для выделения секций */
+        color: #e0e0e0; /* Светлый текст */
+    }
+
+    /* Текстовые поля, выпадающие списки и текстовые области */
+    input[type="text"], input[type="password"], select, textarea {
+        background-color: #333;
+        color: #e0e0e0;
+        border: 1px solid #555;
+        border-radius: 8px;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+        border-color: #bb86fc;
+        outline: none;
+    }
+
+    /* Кнопки */
+    button, input[type="button"], input[type="submit"], .button {
+        background-color: #444;
+        color: #fff;
+        border: 1px solid #666;
+    }
+
+    button:hover, input[type="button"]:hover, input[type="submit"]:hover, .button:hover {
+        background-color: #555;
+    }
+
+
+    /* Списки */
+    ul, ol {
+        color: #e0e0e0;
+    }
+
+/*    li {
+        border-bottom: 1px solid #3b4252; /* Добавить легкую границу между элементами списка */
+    }*/
+
+    /* Таблицы */
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #707070;
+    }
+
+    th {
+        background-color: #707070;
+        color: #eceff4;
+    }
+
+    /* Специфические классы или ID */
+    .error-message, .warning-message {
+        background-color: #bf616a;
+        color: #2e3440;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    .success-message {
+        background-color: #a3be8c;
+        color: #2e3440;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    /* Футер */
+    footer {
+        background-color: #2e3440;
+        color: #d8dee9;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Пользовательские классы для дополнительных элементов */
+    .custom-class {
+        background-color: #3b4252;
+        color: #d8dee9;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+
+    .WidgetSimple {
+        background-color: #333333;
+        border-radius: 16px;
+        box-shadow: 1px 1px 2px #bb86fc;
+    }
+
+    ::placeholder {
+        color: #e0e0e0;
+    }
+
+    .WidgetSimple > .Header h2,
+    .WidgetSimple > .Header h3 {
+        text-shadow: 1px 1px #000;
+        color: #fff;
+    }
+
+    .DataTable {
+        background-color: #4F5052;
+        border: 1px solid #bb86fc;
+    }
+
+    .DataTable thead th {
+        border-bottom: 1px solid #bb86fc;
+        border-right: 1px solid #bb86fc;
+    }
+
+    .DataTable tbody td {
+        border-right: 1px dotted #bb86fc;
+    }
+
+    span.Pagination a {
+        color: #e0e0e0;
+    }
+
+    .DataTable .Row td.QueueOverviewTotals {
+        color: #e0e0e0;
+    }
+
+    .WidgetSimple > .Header, .WidgetSimple.Collapsed.AnimationRunning > .Header {
+        border-bottom: 1px solid #bb86fc;
+    }
+
+    .DataTable .Row td.QueueOverviewTotals {
+        border-top: 1px solid #bb86fc;
+    }
+
+    .DataTable tr:nth-child(even) td {
+        background-color: #474849;
+    }
+
+    .DataTable thead th,
+    .DataTable thead th a {
+        color: #e0e0e0;
+        background-color: #38393A;
+    }
+
+    .Tab.Actions li a {
+        color: #d7d7d7;
+    }
+
+    .Tab.Actions li.Selected a {
+        color: #fff;
+    }
+
+    .D3GraphCanvas {
+        fill: #e0e0e0;
+    }
+
+    .DataTable thead th.DashboardHeader a,.TableSmall thead th.OverviewHeader a,.DataTable thead th.DashboardHeader span.Gray {
+        color: #e0e0e0;
+    }
+
+    .settingsWidget label {
+        color: #bbb;
+    }
+
+    .SettingsWidget label.Checked {
+        color: #e0e0e0;
+    }
+
+    .SettingsWidget label:hover {
+        color: #000 !important;
+    }
+
+    .ResponsiveHandle {
+        color: #bb86fc;
+    }
+
+    #Navigation > li > a:after {
+        background-color: #bb86fc;
+    }
+
+    .OverviewControl {
+        background-color: #1e1e1e;
+    }
+
+    .ControlRow {
+        background-color: #333333;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-bottom: 1px solid silver;
+    }
+
+    .ControlRow li > a {
+        color: #fafafa;
+    }
+
+    .OverviewActions {
+        background-color: #38393A;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+
+    .Actions li.Inactive a {
+        color: #fafafa;
+        text-shadow: 1px 1px #000;
+    }
+
+    .ActionRow {
+        background-color: #38393A;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-bottom: 1px solid #bb86fc;
+    }
+
+    .Dialog {
+        border-radius: 6px;
+    }
+
+    .Dialog > .Footer {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        background-color: #474849;
+        border-top: 1px solid #bb86fc;
+    }
+
+    .Dialog > .Header {
+        background-color: #333;
+        border-bottom: 1px solid #bb86fc;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+
+    .Dialog > .Header .Close {
+        color: #fafafa;
+    }
+
+    .Dialog > .Content > .InnerContent {
+        background-color: #4F5052;
+    }
+
+    fieldset.TableLike > label, fieldset.TableLike > .Row > label {
+        text-shadow: 0 1px #929292;
+        color: #fafafa !important;
+    }
+
+    input[type=text], input[type=password], input[type=email], textarea, select[multiple=multiple] {
+        box-shadow: inset 1px 1px 1px #111;
+    }
+
+    input[type=text][readonly], input[type=password][readonly], input[type=email][readonly], textarea[readonly] {
+        box-shadow: inset 1px 1px 1px #111;
+        background-color: #333;
+    }
+
+    .BreadCrumb {
+        background-color: #4F5052;
+        border-radius: 6px;
+        box-shadow: 1px 1px #bb86fc;
+    }
+
+    .BreadCrumb li {
+        color: #e0e0e0;
+    }
+
+    ul.Tablelike li {
+        background-color: #4F5052;
+    }
+
+    ul.Tablelike li:nth-child(even) {
+        background-color: #474849;
+    }
+
+    ul.Tablelike {
+        border: 1px solid #bb86fc;
+    }
+
+    .TableSmall {
+        color: #e0e0e0;
+        border: 1px solid #bb86fc;
+    }
+
+    .TableSmall thead th,
+    #OverviewBody {
+        border-right: 1px solid #bb86fc;
+        border-bottom: 1px solid #bb86fc;
+    }
+
+    .TableSmall td {
+        border-right: 1px dotted #bb86fc;
+    }
+
+    .TableSmall td a {
+        color: #bb86fc;
+    }
+
+    .TableSmall thead th,
+    .TableSmall thead th a {
+        background-color: #38393A;
+        color: #e0e0e0;
+    }
+
+    .TableSmall thead span.Gray {
+        color: #e0e0e0;
+    }
+
+    .TableSmall tr:nth-child(even) td {
+        background-color: #474849;
+    }
+
+    .TableSmall tr:nth-child(odd) td {
+        background-color: #474849;
+    }
+
+    #cke_RichText {
+        filter: invert(0%) !important;
+    }
+
+    div.InputField_TreeContainer {
+        background-color: #38393A;
+    }
+
+    .jstree-InputField .jstree-wholerow-ul .jstree-wholerow-clicked,
+    div.InputField_Selection div.Text {
+        background-color: #929292;
+    }
+
+    .Actions li a, .Actions li span {
+        color: #e0e0e0;
+    }
+
+    .Cluster ul ul {
+        background-color: #38393A;
+    }
+
+    .Cluster ul ul li a:hover {
+        background-color: #929292;
+    }
+
+/*    .ArticleMailContent iframe {
+        background-color: #474849;
+        color: #e0e0e0;
+    }*/
+
+    .ArticleMailContent iframe {
+        color: #fafafa;
+    }
+
+    .ArticleSenderInitials span {
+        color: #bb86fc;
+    }
+
+    .Avatar {
+        border-radius: 50%;
+        background-color: #1e1e1e;
+        border: 1px solid #bb86fc;
+    }
+
+    .UseArticleColors tr.NotVisibleForCustomer > td {
+        background-color: #6b047b !important;
+    }
+
+    .LayoutPopup > .Content {
+        background-color: #1e1e1e;
+    }
+
+    .LayoutPopup > .Header {
+        background-color: #38393A;
+        border-bottom: 1px solid #bb86fc;
+    }
+
+    .MessageBox p, .MessageBox a {
+        background-color: #6b047b;
+        color: #1e1e1e;
+    }
+
+    .CustomerContainer, .CcCustomerContainer, .BccCustomerContainer {
+        background-color: #38393A;
+        box-shadow: inset 1px 1px 5px #bb86fc;
+        border: 1px solid #bb86fc;
+    }
+
+    .CustomerContainer .BoxLabel, .CcCustomerContainer .BoxLabel, .BccCustomerContainer .BoxLabel {
+        background-color: #4F5052;
+        text-shadow: 1px 1px 1px #000;
+        color: #fafafa;
+    }
+
+    iframe {
+        filter: invert(90%);
+    }
+
+    body.cke_editable {
+        background-color: #38393A;
+        color: #fff;
+    }
+
+    #ArticleTable.DataTable tbody td {
+        background-color: #474849;
+    }
+    .UseArticleColors tr.NotVisibleForCustomer > td > a {
+        color: #fff;
+    }
+
+    .DataTable tr td,
+    .DataTable tr td > a,
+    .UseArticleColors #ArticleTable a{
+        color: #fff;
+    }
+
+    .TableSmall tbody td span.Direction.Incoming .fa-long-arrow-left, .DataTable tbody td span.Direction.Incoming .fa-long-arrow-left, .TableSmall tbody td span.Direction.Outgoing .fa-long-arrow-right, .DataTable tbody td span.Direction.Outgoing .fa-long-arrow-right {
+        color: #e0e0e0;
+    }
+
+    .UseArticleColors tr.system > td {
+        background-color: #fbb287 !important;
+        border-color: #f98946;
+    }
+
+    #ToolBar li.UserAvatar .Initials {
+        color: #bb86fc;
+    }
+
+    @Keyframes border-fill {
+        0% {
+            border-bottom: 2px solid #bb86fc;
+        }
+
+        25% {
+            border-bottom: 2px solid #bb86fc;
+            border-top: 2px solid #bb86fc;
+        }
+
+        66% {
+            border-bottom: 2px solid #bb86fc;
+            border-top: 2px solid #bb86fc;
+            border-left: 2px solid #bb86fc;
+        }
+
+        100% {
+            border: 2px solid #bb86fc;
+        }
+    }
+
+    iframe > html,
+    body > div {
+        color: black;
+        text-shadow: 0 0 black;
+    }
+
+    .Switch, .Value {
+        color: #bb86fc;
+    }
+}
+

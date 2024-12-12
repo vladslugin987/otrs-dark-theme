@@ -1,41 +1,35 @@
 @media all {
-    /* Основные элементы */
     html, body {
-        color: #e0e0e0; /* Светлый текст */
-        background: #191515 !important; /* Тёмный фон */
+        color: #e0e0e0;
+        background: #191515 !important;
         text-shadow: 0 !important;
     }
 
-    /* Ссылки */
     a, a:hover, a:focus {
-        color: #bb86fc; /* Яркий оттенок для ссылок для улучшения читаемости */
+        color: #bb86fc;
     }
 
-    /* Заголовки */
     h1, h2, h3, h4, h5, h6 {
-        color: #e0e0e0; /* Светлый текст для заголовков */
+        color: #e0e0e0;
         text-shadow: 0 0 #fff;
         color: #fff;
     }
 
-    /* Уникальные классы и элементы, требующие специальной настройки */
     .ErrorBox, .SuccessBox {
-        background: #b83850; /* Тёмный фон для блоков с сообщениями об ошибках */
-        color: #FFF; /* Светлый текст */
+        background: #b83850;
+        color: #FFF;
     }
 
     .MessageBox {
-        background: #333; /* Тёмный фон для информационных сообщений */
-        color: #e0e0e0; /* Светлый текст */
+        background: #333;
+        color: #e0e0e0;
     }
 
-    /* Фоновые элементы и специфические элементы */
     .MainBox, .OverviewBox {
-        background: #1e1e1e; /* Ещё более тёмный фон для выделения секций */
-        color: #e0e0e0; /* Светлый текст */
+        background: #1e1e1e;
+        color: #e0e0e0;
     }
 
-    /* Текстовые поля, выпадающие списки и текстовые области */
     input[type="text"], input[type="password"], select, textarea {
         background-color: #333;
         color: #e0e0e0;
@@ -48,7 +42,6 @@
         outline: none;
     }
 
-    /* Кнопки */
     button, input[type="button"], input[type="submit"], .button {
         background-color: #444;
         color: #fff;
@@ -60,16 +53,10 @@
     }
 
 
-    /* Списки */
     ul, ol {
         color: #e0e0e0;
     }
 
-/*    li {
-        border-bottom: 1px solid #3b4252; /* Добавить легкую границу между элементами списка */
-    }*/
-
-    /* Таблицы */
     table {
         border-collapse: collapse;
     }
@@ -85,7 +72,6 @@
         color: #eceff4;
     }
 
-    /* Специфические классы или ID */
     .error-message, .warning-message {
         background-color: #bf616a;
         color: #2e3440;
@@ -102,7 +88,6 @@
         border-radius: 4px;
     }
 
-    /* Футер */
     footer {
         background-color: #2e3440;
         color: #d8dee9;
@@ -110,7 +95,6 @@
         text-align: center;
     }
 
-    /* Пользовательские классы для дополнительных элементов */
     .custom-class {
         background-color: #3b4252;
         color: #d8dee9;

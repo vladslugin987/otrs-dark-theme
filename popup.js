@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentTab.url && currentTab.url.includes("otrs")) {
             const toggleButton = document.getElementById('toggle-dark-theme');
 
-            if (toggleButton) { // Проверяем, найден ли элемент
-                // Получаем текущее состояние темы при загрузке
+            if (toggleButton) {
                 chrome.storage.sync.get('darkThemeEnabled', function(data) {
                     const isDarkThemeEnabled = data.darkThemeEnabled || false; // Устанавливаем false как значение по умолчанию
                     updateButtonState(isDarkThemeEnabled);
@@ -14,10 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 toggleButton.addEventListener('click', function() {
                     chrome.storage.sync.get('darkThemeEnabled', function(data) {
                         const isDarkThemeEnabled = !data.darkThemeEnabled; // Переключаем состояние
-                        // Сохраняем новое состояние темы
                         chrome.storage.sync.set({'darkThemeEnabled': isDarkThemeEnabled}, function() {
                             updateButtonState(isDarkThemeEnabled);
-                            // Отправляем сообщение в активную вкладку для переключения темы
                             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                                 chrome.tabs.sendMessage(tabs[0].id, {
                                     action: 'toggleTheme',
@@ -38,6 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 console.error('Toggle button not found!');
             }
-        } // Закрывающая скобка для if (currentTab.url && currentTab.url.includes("otrs"))
+        }
     });
 });
